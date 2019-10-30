@@ -1,0 +1,820 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+#include<conio.h>
+
+int main()
+{
+    char ch[46],ch2;
+char ch1[50];char ch3 ,ch4;
+int i,j,total,count=0,a,b,k,e,f,g,per,p,m;long int ph;
+
+    printf("\t\t THIS IS THE NEW VERSION OF FLAMES \n\n\n\n");
+    amit:
+    printf("ENTER YOUR NAME\n\n");
+    printf("if you want to hide and write HIT 1 or wana simply write HIT2\n\n");
+    scanf("%d",&e);
+
+    if (e==1){
+for(k=0;k<46;k++)
+    {ch[k]=getch();
+putchar('*');if(ch[k]==13)
+
+{break;}}}
+
+else if(e==2)
+    { printf("ENTER YOUR NAME\n\n");
+      scanf("%s",ch);}
+else
+      {printf("wrong key")
+       ;exit(0);
+
+       }
+
+    printf("\nEnter his/her name\n\n");
+    printf("if you want to hide and write HIT 1 or wana  simply write HIT2\n\n");
+    scanf("%d",&f);
+
+    if (f==1){
+
+for(k=0;k<46;k++)
+
+    {ch1[k]=getch();
+putchar('*');
+
+    if(ch1[k]==13)
+{break;}}
+
+  }
+  else if (f==2)
+    {  printf("Enter your name\n\n");
+         scanf("%s",ch1);}
+  else
+
+    {printf("wrong key");
+     exit(0);
+  }
+    printf("\n\n");
+
+    a=strlen(ch)-1;
+    b=strlen(ch1)-1;
+
+       for (i=0;i<a;i++)
+
+    {
+
+
+     for (j=0;j<b;j++)
+    {
+        if(ch[i]==ch1[j]){
+    count++;
+    break;
+    }
+else
+    {
+        continue;
+        }
+    }    }
+     total=(a+b)-count;
+
+if(total<6)
+    {
+        if (total==1){
+
+        printf("\t\tyou both are friends HAHAHA\n\n");
+        printf("wana know when he/she will get attracted?\n\n");
+        printf("For continue HIT y or to exit press N\n\n");
+
+        ch2=getch();
+
+        if(ch2=='y'||ch2=='Y')
+            {
+            printf("have paitence!\n\n");
+            printf("her or his personal information are\n");
+            printf("email id is: ********************\n");
+            printf("if you want to get the email id hit'Y' or to exit HIT 'N'\n");
+
+        ch3=getch();
+
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}
+
+
+
+
+
+        }else {exit(0);}
+        printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {printf("kindly enter your cell number\n");
+
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+        else{exit(0);}
+
+    }
+    else if(total==2)
+    {
+        printf("\t\tyou both are in love congo\n\n");
+        printf("do you want to percentage of love ?? to know press 1 or to exit HIT2\n\n");
+
+    scanf("%d",&p);
+
+    if(p==1)
+
+        {
+        per=100-total;
+
+        printf("the percentage is %d\n\n",per);
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' or to exit HIt'N'\n");
+
+        ch3=getch();
+
+        if(ch3=='y'||ch3=='Y'){
+
+                for(m=0;m<2000;m++)
+                    {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else
+            {exit(0);}
+    }
+    else
+        {exit(0);}
+
+        printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N \n");
+
+        ch4=getch();
+
+        if(ch4=='Y'||ch4=='y')
+            {printf("kindly enter your cell number\n");
+             scanf("%ld",&ph);
+             printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+         scanf("%d",&g);
+
+        if(g==1)
+            {goto amit;}
+        else
+            {exit(0);}}
+    else if
+        (total==3)
+    {
+        printf("\t\tyou  are Attracted to him or her HAHAHA\n\n");
+        printf("wana know when he/she will get attracted?\n\n");
+        printf("For continue HIT y or to exit press N\n\n");
+
+        ch2=getch();
+
+        if(ch2=='y')
+
+        {printf("have paitence!\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' or to exit HIT 'N'\n");
+
+        ch3=getch();
+
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}}
+        else {exit(0);}
+           printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N \n");
+        ch4=getch();
+         if(ch4=='Y'||ch4=='y')
+            {printf("kindly enter your cell number\n");
+             scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+    printf("wana get more result press 1 and to exit press 2\n");
+
+        scanf("%d",&g);
+                 if(g==1)
+                {goto amit;}
+
+              else{exit(0);}}
+
+         else if(total==4)
+
+
+    {
+        printf("\t\tyou both will maary Wao\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' or to exit HIT 'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+
+            {printf("\/_\/");}
+
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);};
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+               scanf("%ld",&ph);
+               printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+     printf("wana get more result press 1 and to exit press 2\n");
+           scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+        else{exit(0);}}
+
+    else if (total==5)
+    {
+        printf("\t\tyou both are Enemy sorry\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' for to exit HIt'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+
+            {for(m=0;m<2000;m++)
+            {
+                printf("\/_\/");}
+                printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else
+            {exit(0);}
+              printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N \n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+
+         if(g==1)
+
+            {goto amit;}
+            else
+            {exit(0);}}
+    else if (total==6)
+    {
+        printf("\t\tyou both are siblings  HAHAHA\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' or to exit HIt'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {
+                printf("\/_\/");}
+                printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}
+          printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+     printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}else
+
+            {exit(0);}}
+   }        else if (total>6&&total<12)
+   {
+         total=total-6;
+    if (total==1)
+        {
+
+        printf("\t\tyou both are friends HAHAHA\n\n");
+        printf("wana know when he/she will get attracted?\n\n");
+        printf("For continue HIT y or to exit press N\n\n");
+
+        ch2=getch();
+
+        if(ch2=='y')
+            {printf("have paitence!\n\n");
+
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' for to exit HIt'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}}
+
+        else
+
+        {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+
+        if(g==1)
+            {goto amit;}
+        else{exit(0);}
+    }
+    else if(total==2)
+        {
+
+        printf("\t\tyou both are in love congo\n\n");
+        printf("do you want to percentage of love ?? to know press 1 or to exit HIT2\n\n");
+
+    scanf("%d",&p);
+    if(p==1){
+        per=100-total;
+
+        printf("the percentage is %d\n\n",per);
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' for to exit HIt 'N'\n");
+
+        ch3=getch();
+
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);} }
+        else {exit(0);}
+
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+         printf("wana get more result press 1 and to exit press 2\n");
+
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+
+            else
+
+            {exit(0);}}
+    else if (total==3)
+    {
+        printf("\t\tyou  are Attracted to him or her HAHAHA\n\n");
+        printf("wana know when he/she will get attracted?\n\n");
+        printf("For continue HIT y or to exit press N\n\n");
+
+        ch2=getch();
+
+        if(ch2=='y')
+            {
+             printf("have paitence!\n\n");
+             printf("her or his personal information are\n");
+             printf("email id is: ********************\n");
+             printf("if you want to get the email id hit'Y' or to exit HIt 'N'\n");
+
+        ch3=getch();
+        if
+
+            (ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}}else
+         {exit(0);}
+
+  printf("wana more information about your love??\n\n");
+         printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+     printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+        else{exit(0);}}
+
+    else
+
+        if(total==4)
+    {
+
+        printf("\t\tyou both will maary Wao\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit 'Y' or to exit HIt 'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}
+
+
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+     printf("wana get more result press 1 and to exit press 2\n");
+
+        scanf("%d",&g);
+        if(g==1)
+
+            {goto amit;}
+        else
+            {exit(0);}}
+    else
+
+        if (total==5)
+    {
+
+        printf("\t\tyou both are Enemy sorry\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit 'Y' or to exit HIt 'n'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+
+        else {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT Y\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}else
+            {exit(0);}}
+    else if (total==6)
+    {
+        printf("\t\tyou both are siblings  HAHAHA\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit 'Y' or to exit HIt'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+
+    {for(m=0;m<2000;m++)
+
+    {printf("\/_\/");}
+
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}
+          printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N \n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+
+        scanf("%d",&g);
+
+        if(g==1)
+            {goto amit;}
+        else{exit(0);}}
+
+
+}else if
+ (total>12)
+    {
+        total=(total%6);if (total==1){
+
+        printf("\t\tyou both are friends HAHAHA\n\n");
+        printf("wana know when he/she will get attracted?\n\n");
+        printf("For continue HIT y or to exit press N\n\n");
+
+        ch2=getch();
+
+        if(ch2=='y'){printf("have paitence!\n\n");
+
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit 'Y'or to exit HIt'N'\n");
+
+
+        ch3=getch();
+
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+
+            {printf("\/_\/");}
+
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else
+        {exit(0);}}else
+
+            {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N \n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+         printf("wana get more result press 1 and to exit press 2\n");
+         scanf("%d",&g);
+        if(g==1)
+
+        {goto amit;}
+        else{exit(0);}
+    }
+    else if(total==2)
+        {printf("\t\tyou both are in love CONGO\n\n");
+          printf("do you want to percentage of love ?? to know press 1 or to exit HIT2\n\n");
+
+              scanf("%d",&p);
+
+         if(p==1)
+
+        {
+
+
+        per=100-total;
+        printf("the percentage is %d\n\n",per);
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' or to exit HIt'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else
+            {exit(0);}
+        } else
+            {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+        else
+            {exit(0);}}
+    else if (total==3)
+    {   printf("\t\tyou  are Attracted to him or her Not in love \n\n");
+        printf("wana know when he/she will get attracted?\n\n");
+        printf("For continue HIT y or to exit press N\n\n");
+
+        ch2=getch();
+
+        if(ch2=='y'||ch2=='Y')
+            {printf("have paitence!\n\n");
+         printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' or to exit HIt'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}}
+        else {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+        else{exit(0);}}
+        else if(total==4)
+     {  printf("\t\tyou both will maary Wao\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'y' or to exit HIT'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y'){printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+      printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+
+        else{exit(0);}}
+
+    else if (total==5)
+    {
+
+         printf("\t\tyou both are Enemy sorry\n\n");
+        printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit 'Y'or to exit HIt'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+            {for(m=0;m<2000;m++)
+            {printf("\/_\/");}
+            printf("\nemail is : %s%d@gmail.com\n",ch1,total*500);
+        }
+        else {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N\n");
+        ch4=getch();
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("want to  get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+        if(g==1)
+            {goto amit;}
+        else
+        {exit(0);}}
+
+    else if (total==6)
+
+    {printf("\t\tyou both are siblings  HAHAHA\n\n");
+     printf("her or his personal information are\n");
+        printf("email id is: ********************\n");
+        printf("if you want to get the email id hit'Y' or to exit HIt 'N'\n");
+
+        ch3=getch();
+        if(ch3=='y'||ch3=='Y')
+
+            {for(m=0;m<20000;m++)
+            {printf("\/_\/");}
+            printf("\n\nemail is : %s%d@GMAIL.COM\n\n",ch1,total*500);
+        }
+        else
+            {exit(0);}
+  printf("wana more information about your love??\n\n");
+        printf("if you want HIT Y or to exit HIT N \n");
+
+        ch4=getch();
+
+        if(ch4=='Y'||ch4=='y')
+            {
+                printf("kindly enter your cell number\n");
+            scanf("%ld",&ph);
+            printf("we will shortly send you the link on %ld cell no\n\n",ph);
+        }else
+        {
+            exit(0);
+        }
+        printf("wana get more result press 1 and to exit press 2\n");
+        scanf("%d",&g);
+
+        if(g==1)
+
+            {goto amit;}
+        else{exit(0);}}
+
+}
+return 0;
+}
+
