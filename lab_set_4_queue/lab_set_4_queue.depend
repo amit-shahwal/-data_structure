@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1167591451 source:d:\3ise\isi18ee002\lab_set_4_queue\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

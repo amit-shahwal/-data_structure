@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1167599665 source:d:\3ise\isi18ee002\labset3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+

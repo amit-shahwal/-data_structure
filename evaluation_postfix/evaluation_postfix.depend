@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1167594157 source:d:\3ise\isi18ee002\evaluation_postfix\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

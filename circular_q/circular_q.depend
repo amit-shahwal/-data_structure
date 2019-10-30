@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1167595208 source:d:\3ise\isi18ee002\circular_q\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
