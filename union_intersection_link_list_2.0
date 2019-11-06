@@ -1,0 +1,159 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby,
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include<stdio.h>
+#include<stdlib.h>
+
+struct link_list
+
+
+{
+    int data;
+    struct link_list *next;
+};
+typedef struct link_list node;
+node * insert_r(int ele,node * f);
+node * insert_r(int ele,node * f)
+{
+    node *temp,*cur;
+    temp=(node*)malloc(sizeof(node));
+    temp->data=ele;
+    temp->next=NULL;
+    if(f==NULL)
+    return temp;
+    cur=f;
+    while(cur->next!=NULL)
+    cur=cur->next;
+    cur->next=temp;
+    return f;
+}
+node *insert(node *list)
+{       int ele;
+        node *newn,*prev,*cur;
+        newn=(node *)malloc(sizeof(node));
+       printf("enetr the element\n");
+       scanf("%d",&ele);
+       newn->data=ele;
+       newn->next=NULL;
+if(list==NULL)
+return newn;
+if(ele<=list->data)
+{
+    newn->next=list;
+    return newn;
+}
+
+    prev=NULL;
+    cur=list;
+    while(cur!=NULL&&ele>cur->data)
+    {
+        prev=cur;
+        cur=cur->next;
+    }
+    prev->next=newn;
+    newn->next=cur;
+    return list;
+}
+node * intersect(node *l1,node *l2)
+{
+    node *t1,*t2,*t3=NULL;
+    t1=l1;
+  //  t2=l2;//cant be used here
+
+    while(t1!=NULL)
+    {t2=l2;
+        while(t2!=NULL)
+        {
+            if(t1->data==t2->data)
+            t3=insert_r(t1->data,t3);
+            t2=t2->next;
+        }t1=t1->next;
+    }return t3;
+}
+
+
+
+
+
+
+
+node *unionn(node *l1,node * l2)
+{
+       node *t1,*t2,*t3=NULL;
+    t1=l1;
+    t2=l2;
+    while(t1!=NULL&&t2!=NULL)
+    {
+        if(t1->data>t2->data)
+        {
+        t3=insert_r(t2->data,t3);
+        t2=t2->next;}
+        else if(t1->data<t2->data)
+        {
+           t3=insert_r(t1->data,t3);
+           t1=t1->next;
+        }
+
+        else
+        t2=t2->next;
+    }
+    while(t1!=NULL)
+    {
+         t3=insert_r(t1->data,t3);
+           t1=t1->next;
+
+    }
+    while(t2!=NULL)
+    {
+        t3=insert_r(t2->data,t3);
+        t2=t2->next;
+    }
+    return t3;
+}
+
+void display(node *list)
+{node *t;
+    if(list==NULL)
+    {
+        printf("empty\n");
+    return;
+    }
+    printf("=====================================\n");
+    for(t=list;t!=NULL;t=t->next)
+    printf("%4d",t->data);
+    printf("=====================================\n");
+
+}
+int main()
+{
+ int ch;
+ node *l1=NULL,*l2=NULL,*l3=NULL,*l4=NULL;
+do{
+    printf("\n1:insert_list1\n2:insert_list2\n3:union\n4:intersect\n5:display\n6:exit\n");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1: l1=insert(l1);
+        break;
+        case 2: l2=insert(l2);
+        break;
+        case 3: l3=unionn(l1,l2);
+        display(l3);
+        break;
+        case 4: l4=intersect(l1,l2);
+        display(l4);
+        break;
+        case 5: display(l1);display(l2);
+        break;
+        case 6: exit(0);
+
+    }
+    }while(1);
+    return 0;
+}
+
