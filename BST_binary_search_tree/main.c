@@ -20,7 +20,7 @@ typedef struct Btree node;
 //inorder left->root->right//
 //postorder left->right->root//
 
-node *findmin(node *r)
+node *findmin(node *r)// funtion to find the node having the data minimum;
 {
     node *cur=r;
     while(cur->left!=NULL)
@@ -46,19 +46,19 @@ node *insert(node *root)
         if(temp->data>n->data)
         {
             if(temp->left==NULL)
-            {temp->left=n;return root;}
+            {temp->left=n;return root;}//after first node;
             temp=temp->left;
         }
         else if(temp->data<n->data)
         {
             if(temp->right==NULL)
-            {temp->right=n;return root;}
+            {temp->right=n;return root;}//after first node;
             temp=temp->right;
         }
     }
 return root;
 }
-void preorder(node *root)
+void preorder(node *root)//if root will be global it wont work;
 {   node *t1=root;
     if(t1!=NULL)
     {
@@ -68,7 +68,7 @@ void preorder(node *root)
     }
 }
 
-void postorder(node * root)
+void postorder(node * root)//root should be local;
 {node *t1=root;
     if(t1!=NULL)
     {
@@ -89,7 +89,7 @@ void inorder(node * root)
 
     }
 }
-node* delete(node * root,int ele)
+node* delete(node * root,int ele)// return type must be node;
 {
     if(root==NULL)
     {
@@ -101,15 +101,15 @@ node* delete(node * root,int ele)
         root->left=delete(root->left,ele);
     else if(ele>root->data)
             root->right=delete(root->right,ele);
-    else
+    else//if element found
     {
-        if(root->left==NULL)
+        if(root->left==NULL)//for single child
         {
             node *temp=root->right;
             free(root);
             return temp;
         }
-        else if(root->right==NULL)
+        else if(root->right==NULL)//for single child
         {
             node *temp=root->left;
             free(root);
@@ -119,7 +119,7 @@ node* delete(node * root,int ele)
         node *temp=findmin(root->right);
         root->data=temp->data;
         root->right=delete(root->right,temp->data);
-        }
+    }
         return root;
 }
 
