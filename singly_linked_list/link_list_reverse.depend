@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1570993467 source:c:\users\amit shahwal\desktop\programs\link_list_reverse\main.c
+	<stdio.h>
+	<stdlib.h>
+
