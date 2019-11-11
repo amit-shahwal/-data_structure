@@ -73,8 +73,8 @@ void postorder(node * root)//root should be local;
     if(t1!=NULL)
     {
 
-        preorder(t1->left);
-        preorder(t1->right);
+        postorder(t1->left);
+        postorder(t1->right);
         printf("%d\t",t1->data);
     }
 }
@@ -83,9 +83,9 @@ void inorder(node * root)
     if(t1!=NULL)
     {
 
-        preorder(t1->left);
+        inorder(t1->left);
         printf("%d\t",t1->data);
-        preorder(t1->right);
+        inorder(t1->right);
 
     }
 }
