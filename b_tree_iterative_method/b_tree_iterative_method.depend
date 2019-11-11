@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1573492199 source:c:\users\amit shahwal\desktop\programs\b_tree_iterative_method\main.c
+	<stdio.h>
+	<stdlib.h>
+
