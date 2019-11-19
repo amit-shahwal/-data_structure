@@ -1,0 +1,68 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+struct ttree
+{
+    char data;
+    struct ttree *r,*l;
+};
+typedef struct ttree node ;
+node *create(char postfix[])
+{   char ch;
+    node *newn,*stack[20];
+    int i=0,top=-1;
+    while((ch=postfix[i++])!='\0')
+    {
+        newn=(node*)malloc(sizeof(node));
+        newn->data=ch;
+        newn->l=newn->r=NULL;
+        if(isalnum(ch))
+        stack[++top]=newn;
+        else
+        {
+            newn->r=stack[top--];
+            newn->l=stack[top--];
+            stack[++top]=newn;
+        }
+    }return(stack[top--]);
+}
+float eval(node *root)
+{
+    float num;
+    switch(root->data)
+    {
+        case '+' : return (eval(root->l)+eval(root->r));
+        case '-' : return (eval(root->l)-eval(root->r));
+        case '*' : return (eval(root->l)*eval(root->r));
+        case '/' : return (eval(root->l)/eval(root->r));
+        default:
+        if(isalpha(root->data))
+        {
+            printf("%c",root->data);
+            scanf("%f",&num);
+            return(num);
+
+        }else return(root->data-'0');
+    }
+}
+int main()
+{char ch[30];
+    node *root=NULL;
+    printf("enter the expression\n");
+    gets(ch);
+    fflush(stdin);
+    root=create(ch);
+    float res=eval(root);
+    printf("%f",res);
+
+
+    return 0;
+}
