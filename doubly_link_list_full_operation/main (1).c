@@ -83,7 +83,7 @@ node *insert_pos(node *start)//inserting at given position(after that positon);
     else
     {
         newn->next=temp->next;
-        newn->prev=newn;
+        newn->prev=temp;
         temp->next->prev=newn;
         temp->next=newn;
     }
