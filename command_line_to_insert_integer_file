@@ -1,0 +1,27 @@
+#include<string.h>
+#include<stdio.h>
+#include<stdlib.h>
+int main(int argc,char* argv[])
+{
+if(argc<=0)
+return 0;
+
+
+FILE *fp;
+fp=fopen(argv[2],"a");
+int x;
+x=atoi(argv[1]);
+fprintf(fp,"%d",x);
+fputs("\n",fp);
+fclose(fp);
+fp=fopen(argv[2],"r");
+int a;
+while (fscanf(fp,"%d",&a)!=EOF)
+{   int t=a;
+    if(t%10==3|| t==3)
+    printf("%d\t",t);
+    else continue;
+}
+return 0;
+
+}
